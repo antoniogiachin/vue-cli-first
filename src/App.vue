@@ -1,17 +1,21 @@
 <template>
   <div id="app">
     <newTitle></newTitle>
+    <newJumbo></newJumbo>
   </div>
 </template>
 
 <script>
 import newTitle from './components/newTitle.vue'
+import newJumbo from './components/newJumbo.vue'
+
 
 
 export default {
   name: 'App',
   components: {
-    newTitle
+    newTitle,
+    newJumbo
   }
 }
 </script>
@@ -24,5 +28,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>
